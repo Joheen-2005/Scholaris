@@ -520,7 +520,7 @@ agent_icons = {
     "Methodology Design":          ("⚙️", "Designs architecture, metrics & experimental setup."),
     "IEEE Draft Generation":       ("📄", "Generates full IEEE-structured paper draft."),
     "Grant Proposal Generation":   ("💰", "Crafts funding-ready proposals with budget justification."),
-    "Citation Generator":          ("✅", "Generates accurate citations in APA, MLA, IEEE & Chicago styles."),
+    "Citation Generator":          ("✅", "Generates accurate citations in APA, MLA & IEEE formats."),
 }
 icon, desc = agent_icons.get(agent, ("🤖", ""))
 st.sidebar.markdown(f"""
@@ -610,18 +610,55 @@ Include:
 """
     elif agent == "Citation Generator":
         return f"""
-Generate comprehensive citations for the research topic: {topic}
+You are an expert academic citation specialist. Generate DISTINCT and CORRECTLY FORMATTED citations for the research topic: {topic}
 
-Provide citations in the following formats:
-- APA (7th edition)
-- MLA (9th edition)
-- IEEE
-- Chicago
+Generate exactly 5 realistic, relevant academic references for this topic. Use plausible author names, journal names, and years appropriate to this field.
 
-For each format include:
-- 5 highly relevant academic references with full citation details
-- In-text citation examples
-- Brief note on when to use each citation style
+Then format ALL 5 references in each of the 3 styles below. Each style has strict unique formatting rules — do NOT make them look the same.
+
+---
+
+## 📚 APA (7th Edition)
+Rules: Author, A. A., & Author, B. B. (Year). Title of article in sentence case. *Journal Name in Italics*, Volume(Issue), Page–Page. https://doi.org/xxxxx
+- Ampersand (&) before last author
+- Only first word of title capitalized (and proper nouns)
+- Journal name and volume in italics
+- DOI as URL
+
+List all 5 references in APA format.
+
+In-text example: (Author & Author, Year) or Author and Author (Year)
+
+---
+
+## 📖 MLA (9th Edition)
+Rules: Author Last, First, and First Last. "Title of Article in Title Case." *Journal Name*, vol. Number, no. Issue, Year, pp. Page–Page. DOI or URL.
+- "and" (not &) between authors
+- Article title in "quotation marks"
+- Journal name in italics
+- Abbreviations: vol., no., pp.
+
+List all 5 references in MLA format.
+
+In-text example: (Author page) or Author (page)
+
+---
+
+## 🔌 IEEE
+Rules: [#] A. A. Author and B. B. Author, "Title of article," *Journal Abbrev.*, vol. X, no. Y, pp. Z–Z, Mon. Year, doi: 10.xxxx/xxxxx.
+- Numbered references [1], [2], etc.
+- First name abbreviated to initials
+- Article title in "quotes"
+- Journal abbreviated and italicized
+- Comma-separated vol., no., pp., date
+
+List all 5 references in IEEE format.
+
+In-text example: [1], [2], [1]–[3]
+
+---
+
+IMPORTANT: The same 5 papers must appear in all 3 formats but formatted completely differently as per each style's rules above.
 """
 
 # ==============================
