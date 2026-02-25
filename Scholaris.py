@@ -482,7 +482,7 @@ st.markdown("""
   <div class="scholaris-sub">Multi-Agent Research Intelligence System · v2.0</div>
   <div class="scholaris-desc">
     AI Assistant for Literature Mining, Gap Detection,
-    Methodology Design, IEEE Drafting &amp; Grant Proposal Generation
+    Methodology Design,Trend analysis, IEEE Drafting, Grant Proposal Generation &amp, Citation generation
   </div>
   <div style="margin-top:1.2rem;">
     <span class="status-badge">
@@ -769,5 +769,6 @@ st.markdown("""
             font-size:0.68rem;letter-spacing:0.25em;color:rgba(74,96,128,0.6);">
 </div>
 """, unsafe_allow_html=True)
+
 
 
