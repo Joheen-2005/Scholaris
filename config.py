@@ -1,7 +1,7 @@
-import os
-from dotenv import load_dotenv
+import streamlit as st
 
-# Load environment variables from .env
-load_dotenv()
+if "GROQ_API_KEY" not in st.secrets:
+    st.error("GROQ_API_KEY not configured in Streamlit secrets.")
+    st.stop()
 
-GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+GROQ_API_KEY = st.secrets["GROQ_API_KEY"]
