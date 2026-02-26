@@ -703,7 +703,7 @@ _header = (
     '</div>'
     '<div class="sch-tagline">'
     'Literature Mining &nbsp;&middot;&nbsp; Gap Detection &nbsp;&middot;&nbsp; Methodology Design<br>'
-    'Trend Analysis &nbsp;&middot;&nbsp; IEEE Drafting &nbsp;&amp;&nbsp; Grant Proposal Generation'
+    'Trend Analysis &nbsp;&middot;&nbsp; IEEE Drafting &nbsp;&middot;&nbsp; Grant Proposal Generation &nbsp;&amp;&nbsp; Citation Generation'
     '</div>'
     '<div><span class="sch-badge"><span class="sch-badge-dot"></span>&nbsp;System Online</span></div>'
     '</div>'
@@ -906,3 +906,4 @@ st.markdown("""
   Scholaris &nbsp;·&nbsp; Multi-Agent Research Intelligence &nbsp;·&nbsp; Powered by Groq &times; LLaMA
 </div>
 """, unsafe_allow_html=True)
+
