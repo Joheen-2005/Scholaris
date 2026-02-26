@@ -635,7 +635,7 @@ st.markdown("""
   <div class="sch-wordmark">Schol<span class="hi">a</span>ris</div>
   <div class="sch-tagline">
     Literature Mining &nbsp;·&nbsp; Gap Detection &nbsp;·&nbsp; Methodology Design &nbsp;·&nbsp; Trend Analysis<br>
-    IEEE Drafting &nbsp;&amp;&nbsp; Grant Proposal Generation &nbsp;&amp;&nbsp; Citation Generation
+    IEEE Drafting &nbsp;.&nbsp; Grant Proposal Generation &nbsp;&amp;&nbsp; Citation Generation
   </div>
   <div><span class="sch-badge"><span class="sch-badge-dot"></span>System Online</span></div>
 </div>
@@ -812,4 +812,5 @@ st.markdown("""
   Scholaris &nbsp;·&nbsp; Multi-Agent Research Engine &nbsp;·&nbsp;
 </div>
 """, unsafe_allow_html=True)
+
 
