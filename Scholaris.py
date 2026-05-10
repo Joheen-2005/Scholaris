@@ -5,7 +5,7 @@ from config import GROQ_API_KEY
 
 client = Groq(api_key=GROQ_API_KEY)
 cloud="""<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "c409abccb5d5409d871213438a9a8cf8"}'></script>"""
-st.components.v1.html(c,height=0)
+st.components.v1.html(cloud,height=0)
 st.set_page_config(page_title="Scholaris", layout="wide", page_icon="📚")
 
 # ══════════════════════════════════════════════════════════════
