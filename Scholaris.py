@@ -2,10 +2,17 @@ import streamlit as st
 from groq import Groq
 from novelty_agent import compute_novelty
 from config import GROQ_API_KEY
+import streamlit.components.v1 as components
+
+components.html(
+    """
+    <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "c409abccb5d5409d871213438a9a8cf8"}'></script><!-- End Cloudflare Web Analytics -->
+    """,
+    height=0,
+)
 
 client = Groq(api_key=GROQ_API_KEY)
-cloud="""<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "c409abccb5d5409d871213438a9a8cf8"}'></script>"""
-st.components.v1.html(cloud,height=0)
+
 st.set_page_config(page_title="Scholaris", layout="wide", page_icon="📚")
 
 # ══════════════════════════════════════════════════════════════
